@@ -19,7 +19,6 @@ class Bottles
   end
 
   def verse(number)
-    puts "number is #{number}"
     container_number = number.to_bottle_number
 
     "#{container_number} of beer on the wall, ".capitalize +
@@ -57,7 +56,7 @@ class ContainerNumber
   end
 
   def successor
-    (number - 1).to_bottle_number
+    (number.pred).to_bottle_number
   end
 end
 
